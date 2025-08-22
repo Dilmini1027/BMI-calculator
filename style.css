@@ -1,0 +1,115 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #70c9e7, #a8e6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* more flexible than fixed */
+  margin: 0;
+  padding: 10px; /* avoid content touching edges on mobile */
+}
+
+.container {
+  background: #16b5eb;
+  padding: 30px 25px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 380px; /* responsive width */
+  text-align: center;
+  box-shadow: 0px 6px 15px rgba(0,0,0,1); 
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 2rem;
+  color: #053864;
+  font-weight: bold;
+}
+
+p {
+  color: #053864;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.inline-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+button {
+  background: #ff758c;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 50%; /* full width looks cleaner */
+}
+
+button:hover {
+  background: #ec3a61;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: inset 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+  p{
+    font-size: 0.9rem;
+    color: #053864;
+    font-style: italic;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .inline-inputs {
+    flex-direction: column; /* stack feet & inches vertically on small screens */
+  }
+}
